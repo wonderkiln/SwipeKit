@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/zhxnlai/ZLSwipeableViewSwift.git", :tag => "0.0.7" }
+  s.source       = { :git => "https://github.com/zhxnlai/ZLSwipeableViewSwift.git", :tag => "0.0.8" }
   s.source_files  = "ZLSwipeableViewSwift/*.swift"
 
   s.framework  = "UIKit"
