@@ -4,7 +4,7 @@
 //
 //  Created by Zhixuan Lai on 4/27/15.
 //  Copyright (c) 2015 Zhixuan Lai. All rights reserved.
-//
+//  updated by Tanel Temusk | teemusk.com
 
 import UIKit
 
@@ -55,6 +55,7 @@ open class ZLSwipeableView: UIView {
     open var minVelocityInPointPerSecond = CGFloat(750)
     open var allowedDirection = Direction.horizontal
     open var onlySwipeTopCard = false
+    open var damping:CGFloat = 1
 
     // MARK: Delegate
     open var didStart: DidStartHandler?
@@ -185,7 +186,7 @@ open class ZLSwipeableView: UIView {
             return
         }
 
-        let viewManager = ViewManager(view: view, containerView: containerView, index: index, miscContainerView: miscContainerView, animator: animator, swipeableView: self)
+        let viewManager = ViewManager(view: view, containerView: containerView, index: index, miscContainerView: miscContainerView, animator: animator, swipeableView: self, damping:self.damping)
         viewManagers[view] = viewManager
     }
 

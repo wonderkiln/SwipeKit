@@ -58,14 +58,16 @@ class ViewManager : NSObject {
     fileprivate let animator: UIDynamicAnimator
     fileprivate weak var swipeableView: ZLSwipeableView?
     
-    init(view: UIView, containerView: UIView, index: Int, miscContainerView: UIView, animator: UIDynamicAnimator, swipeableView: ZLSwipeableView) {
+    fileprivate var damping:CGFloat = 1
+    
+    init(view: UIView, containerView: UIView, index: Int, miscContainerView: UIView, animator: UIDynamicAnimator, swipeableView: ZLSwipeableView, damping:CGFloat) {
         self.view = view
         self.containerView = containerView
         self.miscContainerView = miscContainerView
         self.animator = animator
         self.swipeableView = swipeableView
         self.state = ViewManager.defaultSnappingState(view)
-        
+        self.damping = damping
         super.init()
         
         view.addGestureRecognizer(ZLPanGestureRecognizer(target: self, action: #selector(ViewManager.handlePan(_:))))
@@ -110,9 +112,12 @@ class ViewManager : NSObject {
     func handlePan(_ recognizer: UIPanGestureRecognizer) {
         guard let swipeableView = swipeableView else { return }
         
-        let translation = recognizer.translation(in: containerView)
-        let location = recognizer.location(in: containerView)
-        let velocity = recognizer.velocity(in: containerView)
+        var translation = recognizer.translation(in: containerView)
+        translation = CGPoint(x: translation.x*damping, y: translation.y*damping)
+        var location = recognizer.location(in: containerView)
+        location = CGPoint(x: location.x*damping, y: location.y*damping)
+        var velocity = recognizer.velocity(in: containerView)
+        velocity = CGPoint(x: velocity.x*damping, y: velocity.y*damping)
         let movement = Movement(location: location, translation: translation, velocity: velocity)
         
         switch recognizer.state {
