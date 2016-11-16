@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         viewSwipable.onlySwipeTopCard = true
-        viewSwipable.damping = 0.35
+        viewSwipable.cardFriction = 0.3
         viewSwipable.allowedDirection = .none
         viewSwipable.numberOfActiveView = 3
         viewSwipable.nextView = {

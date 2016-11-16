@@ -55,7 +55,7 @@ open class ZLSwipeableView: UIView {
     open var minVelocityInPointPerSecond = CGFloat(750)
     open var allowedDirection = Direction.horizontal
     open var onlySwipeTopCard = false
-    open var damping:CGFloat = 1
+    open var cardFriction:CGFloat = 0
 
     // MARK: Delegate
     open var didStart: DidStartHandler?
@@ -186,7 +186,7 @@ open class ZLSwipeableView: UIView {
             return
         }
 
-        let viewManager = ViewManager(view: view, containerView: containerView, index: index, miscContainerView: miscContainerView, animator: animator, swipeableView: self, damping:self.damping)
+        let viewManager = ViewManager(view: view, containerView: containerView, index: index, miscContainerView: miscContainerView, animator: animator, swipeableView: self, friction:self.cardFriction)
         viewManagers[view] = viewManager
     }
 
