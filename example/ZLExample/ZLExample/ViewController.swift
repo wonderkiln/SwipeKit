@@ -28,16 +28,50 @@ class ViewController: UIViewController {
             return view
         }
         viewSwipable.loadViews()
+        
+        
+        viewSwipable.interpretDirection = {(topView: UIView, direction: Direction, views: [UIView], swipeableView: ZLSwipeableView) in
+            
+            let location = CGPoint(x: topView.center.x, y: topView.center.y*0.7)
+            var directionVector: CGVector!
+            let programmaticSwipeVelocity:CGFloat = 3000
+            
+            switch direction {
+            case Direction.left:
+                directionVector = CGVector(dx: -programmaticSwipeVelocity, dy: 0)
+            case Direction.right:
+                directionVector = CGVector(dx: programmaticSwipeVelocity, dy: 0)
+            case Direction.up:
+                directionVector = CGVector(dx: 0, dy: -programmaticSwipeVelocity)
+            case Direction.down:
+                directionVector = CGVector(dx: 0, dy: programmaticSwipeVelocity)
+            default:
+                directionVector = CGVector(dx: 0, dy: 0)
+            }
+            
+            return (location, directionVector)
+        }
+        
+        viewSwipable.didEnd = {view, location in
+            //print("Did end swiping view at location: \(location)")
+        }
+        viewSwipable.swiping = {view, location, translation in
+            print("Swiping at view location: \(location) translation: \(translation)")
+            if translation.x > 50 {
+                self.viewSwipable.offsetTopViewSnapLocation(by: CGPoint(x: 150, y: 0))
+            }else{
+                self.viewSwipable.offsetTopViewSnapLocation(by: CGPoint.zero)
+            }
+        }
         /*
+         
         viewSwipable.didStart = {view, location in
             print("Did start swiping view at location: \(location)")
         }
         viewSwipable.swiping = {view, location, translation in
             print("Swiping at view location: \(location) translation: \(translation)")
         }
-        viewSwipable.didEnd = {view, location in
-            print("Did end swiping view at location: \(location)")
-        }
+        
         viewSwipable.didSwipe = {view, direction, vector in
             print("Did swipe view in direction: \(direction), vector: \(vector)")
         }

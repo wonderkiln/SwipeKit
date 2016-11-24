@@ -60,6 +60,8 @@ class ViewManager : NSObject {
     
     fileprivate var friction:CGFloat = 0
     
+    var snapOffset:CGPoint = CGPoint.zero
+    
     init(view: UIView, containerView: UIView, index: Int, miscContainerView: UIView, animator: UIDynamicAnimator, swipeableView: ZLSwipeableView, friction:CGFloat) {
         self.view = view
         self.containerView = containerView
@@ -82,7 +84,10 @@ class ViewManager : NSObject {
     
     func snappingStateAtContainerCenter() -> State {
         guard let swipeableView = swipeableView else { return ViewManager.defaultSnappingState(view) }
-        return .snapping(containerView.convert(swipeableView.center, from: swipeableView.superview))
+        var snapPoint = containerView.convert(swipeableView.center, from: swipeableView.superview)
+        snapPoint.x += snapOffset.x
+        snapPoint.y += snapOffset.y
+        return .snapping(snapPoint)
     }
     
     deinit {
@@ -127,7 +132,7 @@ class ViewManager : NSObject {
             x: velocity.x*damping,
             y: velocity.y*damping)
         let movement = Movement(location: location, translation: translation, velocity: velocity)
-        
+   
         switch recognizer.state {
         case .began:
             guard case .snapping(_) = state else { return }
@@ -161,6 +166,7 @@ class ViewManager : NSObject {
     }
     
     fileprivate func snapView(_ point: CGPoint) {
+
         snapBehavior = UISnapBehavior(item: view, snapTo: point)
         snapBehavior!.damping = 0.75
         addBehavior(snapBehavior)

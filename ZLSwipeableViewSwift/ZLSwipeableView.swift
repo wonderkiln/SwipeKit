@@ -172,6 +172,11 @@ open class ZLSwipeableView: UIView {
         topViewManager.state = .swiping(location, directionVector)
         swipeView(topView, location: location, directionVector: directionVector)
     }
+    
+    open func offsetTopViewSnapLocation(by offset:CGPoint){
+        guard let topView = topView(), let topViewManager = viewManagers[topView] else { return }
+        topViewManager.snapOffset = offset
+    }
 
     // MARK: Private APIs
     fileprivate func allViews() -> [UIView] {
