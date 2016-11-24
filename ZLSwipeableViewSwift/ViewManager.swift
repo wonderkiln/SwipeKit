@@ -18,6 +18,7 @@ class ViewManager : NSObject {
     
     var state: State {
         didSet {
+            
             if case .snapping(_) = oldValue,  case let .moving(point) = state {
                 unsnapView()
                 attachView(toPoint: point)
@@ -36,6 +37,8 @@ class ViewManager : NSObject {
                 unpushView()
                 detachView()
                 snapView(point)
+            }else{
+                print("truncated")
             }
         }
     }
@@ -88,6 +91,12 @@ class ViewManager : NSObject {
         snapPoint.x += snapOffset.x
         snapPoint.y += snapOffset.y
         return .snapping(snapPoint)
+    }
+    
+    func reset(){
+        self.snapOffset = CGPoint.zero
+        self.state = State.moving(self.view.frame.origin)
+        self.state = snappingStateAtContainerCenter()
     }
     
     deinit {

@@ -81,6 +81,9 @@ class ViewController: UIViewController {
  */
     }
     
+    @IBAction func actionTest(_ sender: Any) {
+        self.viewSwipable.resetTopCard()
+    }
     func getRandomColor() -> UIColor{
         
         let randomRed:CGFloat = CGFloat(drand48())

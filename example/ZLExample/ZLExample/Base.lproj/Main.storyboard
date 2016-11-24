@@ -25,6 +25,15 @@
                                 <rect key="frame" x="12" y="20" width="351" height="647"/>
                                 <color key="backgroundColor" red="0.97254901959999995" green="0.87450980389999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFv-fB-hzg">
+                                <rect key="frame" x="20" y="40" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.54117647059999996" green="0.54901960780000003" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="test"/>
+                                <connections>
+                                    <action selector="actionTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xK-u8-XKf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

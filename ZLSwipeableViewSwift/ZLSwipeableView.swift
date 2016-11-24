@@ -176,6 +176,12 @@ open class ZLSwipeableView: UIView {
     open func offsetTopViewSnapLocation(by offset:CGPoint){
         guard let topView = topView(), let topViewManager = viewManagers[topView] else { return }
         topViewManager.snapOffset = offset
+        
+    }
+    
+    open func resetTopCard(){
+        guard let topView = topView(), let topViewManager = viewManagers[topView] else { return }
+        topViewManager.reset()
     }
 
     // MARK: Private APIs
