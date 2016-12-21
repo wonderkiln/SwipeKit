@@ -1,36 +1,36 @@
-# ZLSwipeableViewSwift
-A simple view for building card like interface like [Tinder](http://www.gotinder.com/) and [Potluck](https://www.potluck.it/). ZLSwipeableViewSwift is based on [ZLSwipeableView](https://github.com/zhxnlai/ZLSwipeableView/).
+# SwipeKit
+A simple kit for building swipe based interactions, even those with cards. SwipeKit a non-tracked fork and is based on [ZLSwipeableView](https://github.com/zhxnlai/ZLSwipeableView/).
 
 Preview
 ---
 ### Custom Animation
-![direction](Previews/animation.gif)
+![direction](.repo/animation.gif)
 ### Custom Swipe
-![direction](Previews/swipe.gif)
+![direction](.repo/swipe.gif)
 ### Custom Direction
-![direction](Previews/direction.gif)
+![direction](.repo/direction.gif)
 ### Undo
-![direction](Previews/undo.gif)
+![direction](.repo/undo.gif)
 ### Rewind
-![direction](Previews/rewind.gif)
+![direction](.repo/rewind.gif)
 
 CocoaPods
 ---
-You can install `ZLSwipeableViewSwift` through CocoaPods adding the following to your Podfile:
+You can install `SwipeKit` through CocoaPods adding the following to your Podfile:
 
-    pod 'ZLSwipeableViewSwift'
+    pod 'SwipeKit'
     use_frameworks!
 Then import it using:
 
-    import ZLSwipeableViewSwift
-    
+    import SwipeKit
+
 Carthage
 ---
-You can install `ZLSwipeableViewSwift` through Carthage by adding  `github "zhxnlai/ZLSwipeableViewSwift"` to your Cartfile
+You can install `SwipeKit` through Carthage by adding  `github "wonderkiln/SwipeKit"` to your Cartfile
 
 Usage
 ---
-Check out the [demo app](https://github.com/zhxnlai/ZLSwipeableViewSwift/archive/master.zip) for an example. It contains the following demos: Default, Custom Animation, Custom Swipe, Allowed Direction, History, Previous View, Should Swipe and Always Swipe.
+Check out the [demo app](https://github.com/zhxnlai/SwipeKit/archive/master.zip) for an example. It contains the following demos: Default, Custom Animation, Custom Swipe, Allowed Direction, History, Previous View, Should Swipe and Always Swipe.
 
 ### Instantiation
 `ZLSwipeableView` can be added to storyboard or instantiated programmatically:
@@ -171,8 +171,8 @@ Requirements
 
 Credits
 ---
-Big thanks to the [contributors](https://github.com/zhxnlai/ZLSwipeableView/graphs/contributors) of ZLSwipeableView.
+Huge thanks to the original [creator/repo](https://github.com/zhxnlai/ZLSwipeableView/) of ZLSwipeableView.
 
 License
 ---
-ZLSwipeableViewSwift is available under MIT license. See the LICENSE file for more info.
+SwipeKit is available under MIT license. See the LICENSE file for more info.
