@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
 
   s.source       = { :git => "https://github.com/wonderkiln/SwipeKit.git" }
-  s.source_files  = "swipkit/*.swift"
+  s.source_files  = "SwipeKit/*.swift"
 
   s.framework  = "UIKit"
 
