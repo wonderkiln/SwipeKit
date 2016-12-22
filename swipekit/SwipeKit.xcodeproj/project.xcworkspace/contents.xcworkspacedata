@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ZLExample.xcodeproj">
+      location = "self:/Users/austinkettner/Code/swipekit/swipekit/SwipeKit.xcodeproj">
    </FileRef>
 </Workspace>

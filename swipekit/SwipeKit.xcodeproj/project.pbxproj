@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D2431AE1E0B537E00C27643 /* swipekit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2431AD1E0B537E00C27643 /* swipekit.swift */; };
 		466AFFEC1CEB8BA1006FF62A /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AFFEB1CEB8BA1006FF62A /* Direction.swift */; };
 		466AFFEE1CEB8CD6006FF62A /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AFFED1CEB8CD6006FF62A /* ViewManager.swift */; };
 		466AFFF01CEB8CEB006FF62A /* Scheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466AFFEF1CEB8CEB006FF62A /* Scheduler.swift */; };
-		46C0F0351C68AC90004BE1B3 /* ZLSwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C0F0341C68AC90004BE1B3 /* ZLSwipeableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		460B72511B76D3E600BB5ED8 /* ZLSwipeableViewSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZLSwipeableViewSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2431AD1E0B537E00C27643 /* swipekit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swipekit.swift; sourceTree = SOURCE_ROOT; };
+		460B72511B76D3E600BB5ED8 /* swipekit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swipekit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		466AFFEB1CEB8BA1006FF62A /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = SOURCE_ROOT; };
 		466AFFED1CEB8CD6006FF62A /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = SOURCE_ROOT; };
 		466AFFEF1CEB8CEB006FF62A /* Scheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scheduler.swift; sourceTree = SOURCE_ROOT; };
-		46C0F0341C68AC90004BE1B3 /* ZLSwipeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableView.swift; sourceTree = SOURCE_ROOT; };
 		46C0F0361C68ACA1004BE1B3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -44,7 +44,7 @@
 		460B72521B76D3E600BB5ED8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				460B72511B76D3E600BB5ED8 /* ZLSwipeableViewSwift.framework */,
+				460B72511B76D3E600BB5ED8 /* swipekit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,11 +52,11 @@
 		460B72531B76D3E600BB5ED8 /* ZLSwipeableViewSwift */ = {
 			isa = PBXGroup;
 			children = (
-				46C0F0341C68AC90004BE1B3 /* ZLSwipeableView.swift */,
 				466AFFEB1CEB8BA1006FF62A /* Direction.swift */,
 				466AFFED1CEB8CD6006FF62A /* ViewManager.swift */,
 				466AFFEF1CEB8CEB006FF62A /* Scheduler.swift */,
 				46C0F0361C68ACA1004BE1B3 /* Info.plist */,
+				2D2431AD1E0B537E00C27643 /* swipekit.swift */,
 			);
 			path = ZLSwipeableViewSwift;
 			sourceTree = "<group>";
@@ -74,9 +74,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		460B72501B76D3E600BB5ED8 /* ZLSwipeableViewSwift */ = {
+		460B72501B76D3E600BB5ED8 /* swipekit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 460B72591B76D3E600BB5ED8 /* Build configuration list for PBXNativeTarget "ZLSwipeableViewSwift" */;
+			buildConfigurationList = 460B72591B76D3E600BB5ED8 /* Build configuration list for PBXNativeTarget "swipekit" */;
 			buildPhases = (
 				460B724C1B76D3E600BB5ED8 /* Sources */,
 				460B724D1B76D3E600BB5ED8 /* Frameworks */,
@@ -87,9 +87,9 @@
 			);
 			dependencies = (
 			);
-			name = ZLSwipeableViewSwift;
+			name = swipekit;
 			productName = ZLSwipeableViewSwift;
-			productReference = 460B72511B76D3E600BB5ED8 /* ZLSwipeableViewSwift.framework */;
+			productReference = 460B72511B76D3E600BB5ED8 /* swipekit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 460B724B1B76D3E600BB5ED8 /* Build configuration list for PBXProject "ZLSwipeableViewSwift" */;
+			buildConfigurationList = 460B724B1B76D3E600BB5ED8 /* Build configuration list for PBXProject "SwipeKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -120,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				460B72501B76D3E600BB5ED8 /* ZLSwipeableViewSwift */,
+				460B72501B76D3E600BB5ED8 /* swipekit */,
 			);
 		};
 /* End PBXProject section */
@@ -142,7 +142,7 @@
 			files = (
 				466AFFEE1CEB8CD6006FF62A /* ViewManager.swift in Sources */,
 				466AFFF01CEB8CEB006FF62A /* Scheduler.swift in Sources */,
-				46C0F0351C68AC90004BE1B3 /* ZLSwipeableView.swift in Sources */,
+				2D2431AE1E0B537E00C27643 /* swipekit.swift in Sources */,
 				466AFFEC1CEB8BA1006FF62A /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +279,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		460B724B1B76D3E600BB5ED8 /* Build configuration list for PBXProject "ZLSwipeableViewSwift" */ = {
+		460B724B1B76D3E600BB5ED8 /* Build configuration list for PBXProject "SwipeKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				460B72571B76D3E600BB5ED8 /* Debug */,
@@ -288,7 +288,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		460B72591B76D3E600BB5ED8 /* Build configuration list for PBXNativeTarget "ZLSwipeableViewSwift" */ = {
+		460B72591B76D3E600BB5ED8 /* Build configuration list for PBXNativeTarget "swipekit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				460B725A1B76D3E600BB5ED8 /* Debug */,

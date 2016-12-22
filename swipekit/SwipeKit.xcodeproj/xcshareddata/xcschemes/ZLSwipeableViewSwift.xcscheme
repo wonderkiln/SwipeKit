@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "460B72501B76D3E600BB5ED8"
-               BuildableName = "ZLSwipeableViewSwift.framework"
-               BlueprintName = "ZLSwipeableViewSwift"
-               ReferencedContainer = "container:ZLSwipeableViewSwift.xcodeproj">
+               BuildableName = "swipekit.framework"
+               BlueprintName = "swipekit"
+               ReferencedContainer = "container:SwipeKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "460B72501B76D3E600BB5ED8"
-            BuildableName = "ZLSwipeableViewSwift.framework"
-            BlueprintName = "ZLSwipeableViewSwift"
-            ReferencedContainer = "container:ZLSwipeableViewSwift.xcodeproj">
+            BuildableName = "swipekit.framework"
+            BlueprintName = "swipekit"
+            ReferencedContainer = "container:SwipeKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "460B72501B76D3E600BB5ED8"
-            BuildableName = "ZLSwipeableViewSwift.framework"
-            BlueprintName = "ZLSwipeableViewSwift"
-            ReferencedContainer = "container:ZLSwipeableViewSwift.xcodeproj">
+            BuildableName = "swipekit.framework"
+            BlueprintName = "swipekit"
+            ReferencedContainer = "container:SwipeKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

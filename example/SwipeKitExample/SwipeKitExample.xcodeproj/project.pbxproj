@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		516E9F711DCA2619001C9E1A /* ZLExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZLExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		516E9F711DCA2619001C9E1A /* SwipeKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		516E9F741DCA2619001C9E1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		516E9F761DCA2619001C9E1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		516E9F791DCA2619001C9E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		516E9F721DCA2619001C9E1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				516E9F711DCA2619001C9E1A /* ZLExample.app */,
+				516E9F711DCA2619001C9E1A /* SwipeKitExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		516E9F701DCA2619001C9E1A /* ZLExample */ = {
+		516E9F701DCA2619001C9E1A /* SwipeKitExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 516E9F831DCA2619001C9E1A /* Build configuration list for PBXNativeTarget "ZLExample" */;
+			buildConfigurationList = 516E9F831DCA2619001C9E1A /* Build configuration list for PBXNativeTarget "SwipeKitExample" */;
 			buildPhases = (
 				516E9F6D1DCA2619001C9E1A /* Sources */,
 				516E9F6E1DCA2619001C9E1A /* Frameworks */,
@@ -99,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = ZLExample;
+			name = SwipeKitExample;
 			productName = ZLExample;
-			productReference = 516E9F711DCA2619001C9E1A /* ZLExample.app */;
+			productReference = 516E9F711DCA2619001C9E1A /* SwipeKitExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -120,7 +120,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 516E9F6C1DCA2619001C9E1A /* Build configuration list for PBXProject "ZLExample" */;
+			buildConfigurationList = 516E9F6C1DCA2619001C9E1A /* Build configuration list for PBXProject "SwipeKitExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -133,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				516E9F701DCA2619001C9E1A /* ZLExample */,
+				516E9F701DCA2619001C9E1A /* SwipeKitExample */,
 			);
 		};
 /* End PBXProject section */
@@ -305,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		516E9F6C1DCA2619001C9E1A /* Build configuration list for PBXProject "ZLExample" */ = {
+		516E9F6C1DCA2619001C9E1A /* Build configuration list for PBXProject "SwipeKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				516E9F811DCA2619001C9E1A /* Debug */,
@@ -314,13 +314,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		516E9F831DCA2619001C9E1A /* Build configuration list for PBXNativeTarget "ZLExample" */ = {
+		516E9F831DCA2619001C9E1A /* Build configuration list for PBXNativeTarget "SwipeKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				516E9F841DCA2619001C9E1A /* Debug */,
 				516E9F851DCA2619001C9E1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
